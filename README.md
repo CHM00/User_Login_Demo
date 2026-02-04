@@ -19,26 +19,26 @@
 推荐使用 `uv` 以获得最快的环境搭建体验。
 
 ### 1. 克隆项目
-\`\`\`bash
+```bash
 git clone git@github.com:CHM00/User_Login_Demo.git
 cd User_Login_Demo
-\`\`\`
+```
 
 ### 2. 创建虚拟环境并同步依赖
-\`\`\`bash
+```bash
 # uv 会自动根据 pyproject.toml 和 uv.lock 同步环境
 uv sync
-\`\`\`
+```
 
 ### 3. 激活环境
-\`\`\`bash
+```bash
 source .venv/bin/activate
-\`\`\`
+```
 
 ### 4. 运行应用
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 ---
 
@@ -47,21 +47,21 @@ python app.py
 项目已包含优化过的 `Dockerfile`，支持分层构建缓存。
 
 ### 1. 构建镜像
-\`\`\`bash
+```bash
 docker build -t mangersystem:latest .
-\`\`\`
+```
 
 ### 2. 运行容器
-\`\`\`bash
+```bash
 # 将容器 3389 端口映射至宿主机 3389 端口
 docker run -d -p 3389:3389 --name mangersystem-container mangersystem:latest
-\`\`\`
+```
 
 ### 3. 挂载开发卷 (代码热重载调试)
 如果你需要在不重新构建镜像的情况下实时修改代码：
-\`\`\`bash
+```bash
 docker run -d -p 3389:3389 -v $(pwd):/app mangersystem:latest
-\`\`\`
+```
 
 ---
 
