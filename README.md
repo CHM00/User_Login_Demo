@@ -2,6 +2,14 @@
 
 本项目是一个基于 **Python 3.12** 开发的高性能用户登录管理演示系统。项目采用现代化的包管理工具 **uv** 进行依赖管理，并提供完整的 **Docker** 容器化部署方案。
 
+**登录界面**：
+<img width="1335" height="902" alt="image" src="https://github.com/user-attachments/assets/2f137494-adaf-4f19-9e09-2dba7e547b1e" />
+
+**后台界面**：
+<img width="1335" height="902" alt="image" src="https://github.com/user-attachments/assets/9eeb426c-8a48-42cb-99b9-c15afdc6254b" />
+
+
+
 ---
 
 ## 🚀 技术栈
