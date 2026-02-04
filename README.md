@@ -79,10 +79,3 @@ docker run -d -p 3389:3389 -v $(pwd):/app mangersystem:latest
 * **权限说明**: 远程推送已配置 SSH Key (ed25519) 以确保身份验证安全性。
 EOF
 
-# 2. 清理之前误生成的临时文件
-rm -f y y.pub
-
-# 3. 提交 README 修改并推送到 GitHub
-git add README.md
-git commit -m "docs: 完善项目文档，增加 Docker 和 uv 使用说明"
-git push
